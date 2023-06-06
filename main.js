@@ -1,8 +1,5 @@
-
 // const btnAdicionarDepois = document.querySelector("#btnAdicionarDepois");
 // const btnRemover = document.querySelector("#btnRemover");
-
-
 const label__texto = document.querySelector(".caixa__label__texto");
 const nomeTexto = document.querySelector("#novoTexto");
 const btnAdicionarAntes = document.querySelector("#btnAdicionarAntes");
@@ -12,21 +9,8 @@ const fazer__pesquisa = document.querySelector("#fazer__pesquisa");
 const resultado = document.querySelector("#pesquisa__resultado");
 const pesquisar = document.querySelector("#pesquisar");
 
-
-
 const array = []
 let indice = 0;
-
-
-
-
-
-
-
-
-
-
-
 
 const contarDigitos = () => {
     const test = (digitos) => {
@@ -40,20 +24,14 @@ const contarDigitos = () => {
     label__texto.innerHTML = `${digitos} ${test(digitos)}`;
 };
 
-
-
 const textoSelecionado = () => {
     const textosSelecionados = [...document.querySelectorAll(".selecionado")];
     return textosSelecionados[0]
 };
 
-
-
 const criarNovoElemento = (texto) => {
     const novoElemento = document.createElement("div");
     const remover = document.createElement("button");
-
-    
     
     const tirarSelecao = () => {
         const selecionados = [...document.querySelectorAll(".selecionado")];
@@ -61,8 +39,6 @@ const criarNovoElemento = (texto) => {
             el.classList.remove("selecionado");
         })
     };
-
-    
     
     novoElemento.setAttribute("class", "textos");
     novoElemento.setAttribute("id", "c" + indice);
@@ -71,7 +47,7 @@ const criarNovoElemento = (texto) => {
         tirarSelecao()
         evt.target.classList.toggle("selecionado");
     })
-
+    
     remover.setAttribute("id", "remover");
     remover.innerHTML = "";
     remover.addEventListener("click", () => {
@@ -81,13 +57,10 @@ const criarNovoElemento = (texto) => {
             array.splice(indiceRemovido, 1);
         }
     })
-
+    
     novoElemento.appendChild(remover);
     return novoElemento
 };
-
-
-
 
 const pesquisa = () => {
     const pesquisa = document.getElementById("pesquisar").value;
@@ -96,22 +69,15 @@ const pesquisa = () => {
     );
 }
 
-
-
-
 nomeTexto.addEventListener("input", () => {
     contarDigitos();
 });
-
-
 
 array.forEach((el) => {
     const novoElemento = criarNovoElemento(el)
     caixa__2.appendChild(novoElemento);
     indice++
 })
-
-
 
 btnAdicionarAntes.addEventListener("click", () => {
     if (nomeTexto.value !== "") {
@@ -121,12 +87,6 @@ btnAdicionarAntes.addEventListener("click", () => {
         alert("Digite um texto");
     }
 });
-
-
-
-
-
-
 
 // btnAdicionarDepois.addEventListener("click", () => {
 //     if (textoSelecionado()) {
@@ -149,13 +109,6 @@ btnAdicionarAntes.addEventListener("click", () => {
 //     }
 // })
 
-
-
-
-
-
-
-
 btnSelecionado.addEventListener("click", () => {
     if (textoSelecionado()) {
         alert(textoSelecionado().textContent);
@@ -164,13 +117,6 @@ btnSelecionado.addEventListener("click", () => {
     }
 })
 
-
-
-
-
-
-
-
 fazer__pesquisa.addEventListener("click", () => {
     if (pesquisa().length > 0) {
         resultado.innerHTML = `O nome "${pesquisar.value}" pesquisado está na lista`;
@@ -178,6 +124,222 @@ fazer__pesquisa.addEventListener("click", () => {
         resultado.innerHTML = `O nome "${pesquisar.value}" pesquisado não foi encontrado na lista`;
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
