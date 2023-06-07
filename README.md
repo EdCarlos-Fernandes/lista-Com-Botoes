@@ -1,7 +1,7 @@
 # lista-Com-Botoes
 
-Um INPUT que vc poderá digitar palavras e números
-Abaixo do INPUT vc notará um contador de teclas digitadas
+Um INPUT que vc poderá digitar palavras e números,
+Abaixo do INPUT vc notará um contador de teclas digitadas,
 Logo abaixo terá dois botões, um para ADICIONAR outro para SELECIONAR
 
 Clicando no botão de ADICIONAR, se tiver algo digitado no INPUT será adicionado imediatamente à lista
