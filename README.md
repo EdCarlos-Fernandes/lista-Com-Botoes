@@ -13,3 +13,7 @@ Mais abaixo verá um segundo INPUT e abaixo dele um botão simples para pesquisa
 Adicione itens à lista e logo após digite o que deseja pesquisar, caso tenha algo parecido com o que foi pesquisado, aparecerá uma mensagem informando que o item pesquisado se encontra realmente na lista ou não.
 
 Por ultimo a lista onde os itens adicionados irão aparecer, os itens poderão ser selecionados, e também cada iten irá conter uma lixeira, caso queira excluir o item da lista basta clicar na lixeira
+
+
+
+![Badge Finalizado](https://img.shields.io/static/v1?label=STATUS&message=Finalizado&color=GREEN&style=for-the-badge)
