@@ -1,4 +1,4 @@
-# lista-Com-Botoes
+# lista-to-do-CRUD
 
 Um INPUT que vc poderá digitar palavras e números,
 
